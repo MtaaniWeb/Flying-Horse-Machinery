@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flying Horse Machinery Ltd | Modern Equipment for Modern Farming</title>
+<meta name="description" content="Agricultural machinery and equipment for Kenyan farmers — tractors, chaff cutters, water pumps, silage balers, pellet makers and more. Powering Farmers. Building Futures.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#101b24;
+    --ink-2:#1b2a37;
+    --steel:#8b98a3;
+    --steel-light:#c7cfd5;
+    --paper:#f5f3ee;
+    --paper-2:#ebe7dd;
+    --amber:#e0790f;
+    --amber-dark:#b8620c;
+    --gold:#c69a2c;
+    --white:#ffffff;
+    --line: rgba(16,27,36,0.12);
+    --line-dark: rgba(255,255,255,0.14);
+    --radius: 3px;
+    --font-head: 'Manrope', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --maxw: 1200px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{font-family:var(--font-head);margin:0;line-height:1.15;letter-spacing:-0.01em;}
+  p{margin:0;}
+  ul{margin:0;padding:0;list-style:none;}
+  button{font-family:var(--font-body);cursor:pointer;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  section{position:relative;}
+  .eyebrow{
+    font-size:12.5px;
+    font-weight:700;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--amber-dark);
+  }
+  .eyebrow.on-dark{color:var(--gold);}
+  .section-head{max-width:620px;margin-bottom:40px;}
+  .section-head h2{font-size:clamp(28px,3.4vw,40px);margin-top:10px;}
+  .section-head p{margin-top:14px;color:#3d4a54;font-size:16px;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:14px 26px;
+    font-weight:600;font-size:14.5px;
+    border-radius:var(--radius);
+    border:1.5px solid transparent;
+    transition:background .15s ease, color .15s ease, border-color .15s ease, transform .1s ease;
+    white-space:nowrap;
+  }
+  .btn:active{transform:translateY(1px);}
+  .btn-amber{background:var(--amber);color:var(--white);border-color:var(--amber);}
+  .btn-amber:hover{background:var(--amber-dark);border-color:var(--amber-dark);}
+  .btn-dark{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  .btn-dark:hover{background:var(--ink-2);}
+  .btn-outline{background:transparent;color:var(--ink);border-color:var(--ink);}
+  .btn-outline:hover{background:var(--ink);color:var(--paper);}
+  .btn-outline-light{background:transparent;color:var(--white);border-color:rgba(255,255,255,0.55);}
+  .btn-outline-light:hover{background:rgba(255,255,255,0.12);border-color:var(--white);}
+  .btn-wa{background:#1f7a52;color:#fff;border-color:#1f7a52;}
+  .btn-wa:hover{background:#175f40;border-color:#175f40;}
+  .btn-sm{padding:9px 16px;font-size:13px;}
+  .btn-block{width:100%;}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky;top:0;z-index:80;
+    background:rgba(16,27,36,0.97);
+    border-bottom:1px solid var(--line-dark);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;max-width:var(--maxw);margin:0 auto;
+  }
+  .brand{display:flex;align-items:center;gap:10px;color:var(--paper);}
+  .brand-mark{
+    width:38px;height:38px;flex:none;
+    background:var(--amber);
+    display:flex;align-items:center;justify-content:center;
+    border-radius:2px;
+  }
+  .brand-mark svg{width:22px;height:22px;}
+  .brand-text{display:flex;flex-direction:column;line-height:1.15;}
+  .brand-text strong{font-family:var(--font-head);font-size:16px;font-weight:800;letter-spacing:0.01em;}
+  .brand-text span{font-size:10.5px;color:var(--steel-light);letter-spacing:0.06em;text-transform:uppercase;}
+  nav.links{display:flex;gap:32px;align-items:center;}
+  nav.links a{color:var(--steel-light);font-size:14.5px;font-weight:500;transition:color .15s;}
+  nav.links a:hover{color:var(--white);}
+  .nav-actions{display:flex;align-items:center;gap:12px;}
+  .icon-btn{
+    position:relative;width:40px;height:40px;border-radius:2px;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,0.06);border:1px solid var(--line-dark);color:var(--paper);
+  }
+  .icon-btn:hover{background:rgba(255,255,255,0.12);}
+  .icon-btn svg{width:19px;height:19px;}
+  .cart-badge{
+    position:absolute;top:-6px;right:-6px;background:var(--amber);color:#fff;
+    font-size:10.5px;font-weight:700;min-width:18px;height:18px;border-radius:9px;
+    display:flex;align-items:center;justify-content:center;padding:0 4px;
+  }
+  .menu-toggle{display:none;}
+  @media(max-width:900px){
+    nav.links{display:none;}
+    .menu-toggle{display:flex;}
+  }
+
+  /* mobile drawer */
+  .mobile-menu{
+    position:fixed;inset:0;z-index:120;display:none;
+  }
+  .mobile-menu.open{display:block;}
+  .mobile-menu .scrim{position:absolute;inset:0;background:rgba(0,0,0,0.5);}
+  .mobile-menu .panel{
+    position:absolute;top:0;right:0;bottom:0;width:min(320px,86vw);
+    background:var(--ink);padding:26px 22px;display:flex;flex-direction:column;gap:4px;
+  }
+  .mobile-menu .panel a{
+    color:var(--paper);padding:14px 4px;font-size:16px;font-weight:600;border-bottom:1px solid var(--line-dark);
+  }
+  .mobile-menu .close-x{align-self:flex-end;background:none;border:none;color:var(--paper);margin-bottom:10px;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:88vh;display:flex;align-items:flex-end;
+    background:
+      linear-gradient(180deg, rgba(16,27,36,0.55) 0%, rgba(16,27,36,0.55) 35%, rgba(16,27,36,0.94) 100%),
+      url('https://res.cloudinary.com/flying-horse-machinery/image/upload/f_auto,q_auto,w_1920/hero/hero-main-farm-equipment.jpg') center/cover no-repeat;
+    color:var(--white);
+  }
+  .hero-inner{max-width:var(--maxw);margin:0 auto;padding:80px 24px 56px;width:100%;}
+  .hero-eyebrow{color:var(--gold);}
+  .hero h1{font-size:clamp(34px,5.6vw,60px);margin-top:14px;max-width:820px;font-weight:800;}
+  .hero-sub{max-width:600px;margin-top:18px;color:var(--steel-light);font-size:17px;}
+  .hero-actions{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+  .hero-trust{
+    margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);
+    border-top:1px solid var(--line-dark);padding-top:22px;gap:20px;
+  }
+  .hero-trust div strong{display:block;font-family:var(--font-head);font-size:14.5px;letter-spacing:0.02em;}
+  .hero-trust div span{font-size:13px;color:var(--steel-light);}
+  @media(max-width:700px){.hero-trust{grid-template-columns:1fr;gap:14px;}}
+
+  /* ---------- INTRO ---------- */
+  .intro{padding:88px 0 40px;}
+  .intro-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:start;}
+  .intro h2{font-size:clamp(28px,3.6vw,38px);margin-top:10px;}
+  .intro-body p{color:#3d4a54;font-size:16px;margin-top:16px;}
+  .intro-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;}
+  .intro-tags span{
+    font-size:12.5px;font-weight:600;border:1px solid var(--line);padding:8px 12px;border-radius:2px;color:var(--ink-2);
+  }
+  @media(max-width:800px){.intro-grid{grid-template-columns:1fr;gap:24px;}}
+
+  /* ---------- CATEGORY CARDS ---------- */
+  .categories{padding:56px 0;}
+  .cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px;}
+  .cat-card{background:var(--paper);padding:30px 28px;display:flex;flex-direction:column;min-height:280px;}
+  .cat-card .num{font-family:var(--font-head);font-weight:800;font-size:13px;color:var(--amber);}
+  .cat-card h3{font-size:19px;margin-top:14px;}
+  .cat-card p{color:#4a5560;font-size:14px;margin-top:10px;}
+  .cat-card ul{margin-top:16px;display:flex;flex-direction:column;gap:6px;flex:1;}
+  .cat-card li{font-size:13.5px;color:#333e47;padding-left:14px;position:relative;}
+  .cat-card li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;background:var(--steel);}
+  .cat-card .cat-link{margin-top:18px;font-size:13.5px;font-weight:700;color:var(--amber-dark);display:inline-flex;align-items:center;gap:6px;}
+  @media(max-width:900px){.cat-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:600px){.cat-grid{grid-template-columns:1fr;}}
+
+  /* ---------- CATALOGUE ---------- */
+  .catalogue{padding:70px 0 90px;background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .cat-controls{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px;align-items:center;justify-content:space-between;}
+  .search-box{
+    position:relative;flex:1;min-width:240px;max-width:420px;
+  }
+  .search-box input{
+    width:100%;padding:12px 14px 12px 40px;border:1.5px solid var(--line);background:var(--white);
+    border-radius:2px;font-size:14.5px;font-family:var(--font-body);
+  }
+  .search-box input:focus{outline:none;border-color:var(--ink);}
+  .search-box svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--steel);}
+  .filter-row{display:flex;gap:8px;flex-wrap:wrap;}
+  .filter-chip{
+    padding:9px 15px;font-size:13px;font-weight:600;border:1.5px solid var(--line);background:var(--white);
+    border-radius:20px;color:var(--ink-2);transition:all .15s;
+  }
+  .filter-chip.active,.filter-chip:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+
+  .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:4px;}
+  @media(max-width:980px){.product-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:620px){.product-grid{grid-template-columns:1fr;}}
+
+  .p-card{
+    background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column;
+  }
+  .p-thumb{
+    aspect-ratio:4/3;background:var(--paper-2);position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+  }
+  .p-thumb img{width:100%;height:100%;object-fit:cover;}
+  .p-thumb .cat-tag{
+    position:absolute;top:10px;left:10px;background:var(--ink);color:var(--paper);
+    font-size:10.5px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:5px 9px;border-radius:2px;
+  }
+  .p-body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1;}
+  .p-body h4{font-size:16.5px;font-weight:700;}
+  .p-specs{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;}
+  .p-specs span{font-size:11.5px;font-weight:600;color:var(--ink-2);background:var(--paper-2);padding:4px 8px;border-radius:2px;}
+  .p-price{margin-top:14px;font-family:var(--font-head);font-weight:800;font-size:18px;color:var(--ink);}
+  .p-price small{display:block;font-family:var(--font-body);font-weight:500;font-size:11.5px;color:var(--steel);margin-top:2px;}
+  .p-actions{margin-top:16px;display:flex;gap:8px;}
+  .p-actions .btn{flex:1;}
+  .add-fab{
+    width:44px;height:44px;flex:none;border-radius:2px;border:1.5px solid var(--ink);background:var(--white);
+    display:flex;align-items:center;justify-content:center;transition:background .15s;
+  }
+  .add-fab:hover{background:var(--ink);color:var(--paper);}
+  .add-fab svg{width:18px;height:18px;}
+  .no-results{padding:60px 0;text-align:center;color:var(--steel);display:none;}
+
+  /* ---------- FEATURED STRIP ---------- */
+  .featured{padding:80px 0;}
+  .feat-scroll{
+    display:grid;grid-auto-flow:column;grid-auto-columns:260px;gap:18px;overflow-x:auto;
+    padding-bottom:14px;margin-top:6px;scrollbar-width:thin;
+  }
+  .feat-card{border:1px solid var(--line);background:var(--white);flex:none;}
+  .feat-card .p-thumb{aspect-ratio:1/1;}
+  .feat-card .p-body{padding:14px 15px 16px;}
+  .feat-card h4{font-size:14.5px;}
+  .feat-card .p-price{font-size:15.5px;margin-top:8px;}
+
+  /* ---------- WALKING TRACTOR ---------- */
+  .wt{padding:80px 0;background:var(--ink);color:var(--white);}
+  .wt-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+  .wt-img{border:1px solid var(--line-dark);}
+  .wt-img img{aspect-ratio:4/3;object-fit:cover;}
+  .wt h2{font-size:clamp(26px,3.2vw,34px);margin-top:10px;}
+  .wt-copy{color:var(--steel-light);margin-top:16px;font-size:15.5px;}
+  .wt-uses{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 20px;margin-top:24px;}
+  .wt-uses li{font-size:14px;padding-left:16px;position:relative;color:var(--steel-light);}
+  .wt-uses li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--amber);}
+  .wt-config{margin-top:30px;border:1px solid var(--line-dark);padding:20px;background:rgba(255,255,255,0.03);}
+  .wt-config-label{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--steel-light);font-weight:700;}
+  .wt-options{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;}
+  .wt-opt{
+    flex:1;min-width:130px;border:1.5px solid var(--line-dark);padding:12px 14px;border-radius:2px;cursor:pointer;
+    background:transparent;color:var(--white);text-align:left;
+  }
+  .wt-opt strong{display:block;font-family:var(--font-head);font-size:14px;}
+  .wt-opt span{font-size:12.5px;color:var(--steel-light);}
+  .wt-opt.active{border-color:var(--amber);background:rgba(224,121,15,0.12);}
+  .wt-price-row{display:flex;align-items:center;justify-content:space-between;margin-top:18px;}
+  .wt-price-row .price{font-family:var(--font-head);font-size:24px;font-weight:800;color:var(--gold);}
+  .wt-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap;}
+  .wt-delivery{margin-top:14px;font-size:12.5px;color:var(--steel-light);}
+  @media(max-width:860px){.wt-grid{grid-template-columns:1fr;gap:30px;}}
+
+  /* ---------- WHY / VALUES ---------- */
+  .why{padding:88px 0;}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px;}
+  .why-card{border:1px solid var(--line);padding:28px;background:var(--white);}
+  .why-card .ic{width:38px;height:38px;background:var(--paper-2);display:flex;align-items:center;justify-content:center;border-radius:2px;}
+  .why-card .ic svg{width:19px;height:19px;color:var(--amber-dark);}
+  .why-card h3{font-size:17px;margin-top:16px;}
+  .why-card p{font-size:14px;color:#4a5560;margin-top:8px;}
+  @media(max-width:700px){.why-grid{grid-template-columns:1fr;}}
+
+  /* ---------- SERVICES ---------- */
+  .services{padding:70px 0;background:var(--ink-2);color:var(--white);}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);margin-top:36px;}
+  .svc-card{background:var(--ink-2);padding:26px;}
+  .svc-card h3{font-size:16px;}
+  .svc-card p{font-size:13.5px;color:var(--steel-light);margin-top:10px;}
+  @media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:600px){.svc-grid{grid-template-columns:1fr;}}
+
+  /* ---------- HOW IT WORKS ---------- */
+  .how{padding:88px 0;}
+  .how-row{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:40px;counter-reset:step;}
+  .how-step{border-top:3px solid var(--amber);padding-top:16px;}
+  .how-step .n{font-family:var(--font-head);font-weight:800;font-size:22px;color:var(--steel);}
+  .how-step h4{font-size:15px;margin-top:8px;}
+  .how-step p{font-size:13px;color:#4a5560;margin-top:8px;}
+  .how-cta{margin-top:44px;border:1px solid var(--line);padding:26px 30px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;background:var(--paper-2);}
+  .how-cta strong{font-family:var(--font-head);font-size:17px;}
+  @media(max-width:900px){.how-row{grid-template-columns:repeat(2,1fr);}}
+
+  /* ---------- ABOUT / MISSION ---------- */
+  .about{padding:88px 0;}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
+  .about-copy p{color:#3d4a54;font-size:15.5px;margin-top:14px;}
+  .mv-box{border-left:3px solid var(--amber);padding-left:18px;margin-top:24px;}
+  .mv-box h4{font-size:13px;text-transform:uppercase;letter-spacing:0.06em;color:var(--amber-dark);}
+  .mv-box p{font-size:14.5px;color:#3d4a54;margin-top:8px;}
+  .about-visual{border:1px solid var(--line);aspect-ratio:4/5;overflow:hidden;}
+  @media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:30px;}.about-visual{order:-1;aspect-ratio:16/9;}}
+
+  /* ---------- BRAND STATEMENT ---------- */
+  .statement{
+    padding:120px 0;text-align:center;background:var(--ink);color:var(--white);
+    background-image:linear-gradient(rgba(16,27,36,0.86),rgba(16,27,36,0.92)), url('https://res.cloudinary.com/flying-horse-machinery/image/upload/f_auto,q_auto,w_1600/brand/statement-bg-field.jpg');
+    background-size:cover;background-position:center;
+  }
+  .statement h2{font-size:clamp(30px,5vw,52px);max-width:760px;margin:0 auto;}
+  .statement p{max-width:520px;margin:22px auto 0;color:var(--steel-light);font-size:16px;}
+  .statement .tag{margin-top:28px;color:var(--gold);font-weight:700;letter-spacing:0.03em;font-size:15px;}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .trust{padding:88px 0;}
+  .trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px;}
+  .quote-card{border:1px solid var(--line);padding:30px;background:var(--white);}
+  .quote-card p{font-size:17px;font-family:var(--font-head);font-weight:600;line-height:1.4;}
+  .quote-card span{display:block;margin-top:16px;font-size:13.5px;color:var(--steel);font-weight:500;}
+  @media(max-width:700px){.trust-grid{grid-template-columns:1fr;}}
+
+  /* ---------- DELIVERY ---------- */
+  .delivery{padding:70px 0;background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .del-row{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;}
+  .del-row h2{font-size:clamp(24px,3vw,32px);}
+  .del-row p{color:#3d4a54;font-size:15px;margin-top:12px;max-width:520px;}
+
+  /* ---------- CART BUILDER ---------- */
+  .builder{padding:88px 0;}
+  .builder-box{border:1px solid var(--line);background:var(--white);margin-top:10px;}
+  .builder-empty{padding:60px 30px;text-align:center;color:var(--steel);}
+  .builder-empty svg{width:36px;height:36px;margin:0 auto 14px;color:var(--steel);}
+  .b-row{display:grid;grid-template-columns:64px 1fr auto auto auto;gap:16px;align-items:center;padding:16px 22px;border-bottom:1px solid var(--line);}
+  .b-row img{width:56px;height:56px;object-fit:cover;border:1px solid var(--line);}
+  .b-name{font-weight:700;font-size:14.5px;}
+  .b-variant{font-size:12.5px;color:var(--steel);margin-top:2px;}
+  .qty{display:flex;align-items:center;border:1px solid var(--line);border-radius:2px;}
+  .qty button{width:28px;height:28px;background:none;border:none;font-size:15px;}
+  .qty span{width:26px;text-align:center;font-size:13.5px;font-weight:600;}
+  .b-price{font-weight:700;font-size:14.5px;white-space:nowrap;}
+  .b-remove{background:none;border:none;color:var(--steel);}
+  .b-remove:hover{color:#b03434;}
+  .builder-footer{display:flex;align-items:center;justify-content:space-between;padding:20px 22px;flex-wrap:wrap;gap:14px;}
+  .b-total{font-family:var(--font-head);font-weight:800;font-size:19px;}
+  .b-total small{display:block;font-family:var(--font-body);font-weight:500;font-size:11.5px;color:var(--steel);}
+  @media(max-width:640px){.b-row{grid-template-columns:44px 1fr auto;row-gap:8px;}.b-row .qty{grid-column:2/3;}.b-row .b-remove{grid-column:3/4;}}
+
+  /* ---------- CTA BAND ---------- */
+  .cta-band{padding:90px 0;text-align:center;background:var(--amber);color:#fff;}
+  .cta-band h2{font-size:clamp(28px,3.6vw,42px);max-width:640px;margin:0 auto;}
+  .cta-band p{max-width:560px;margin:18px auto 0;color:rgba(255,255,255,0.9);font-size:15.5px;}
+  .cta-band .hero-actions{justify-content:center;margin-top:30px;}
+  .cta-band .btn-dark{background:var(--ink);border-color:var(--ink);}
+  .cta-band .btn-outline-light{border-color:rgba(255,255,255,0.7);}
+
+  /* ---------- CONTACT ---------- */
+  .contact{padding:90px 0;}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;}
+  .contact-info h2{font-size:clamp(26px,3.4vw,36px);margin-top:10px;}
+  .contact-info p{color:#3d4a54;margin-top:14px;font-size:15px;max-width:420px;}
+  .contact-list{margin-top:30px;display:flex;flex-direction:column;gap:20px;}
+  .contact-list li{display:flex;gap:14px;align-items:flex-start;}
+  .contact-list .ic{width:38px;height:38px;flex:none;background:var(--paper-2);border-radius:2px;display:flex;align-items:center;justify-content:center;}
+  .contact-list .ic svg{width:18px;height:18px;color:var(--amber-dark);}
+  .contact-list strong{display:block;font-size:14px;}
+  .contact-list span, .contact-list a{font-size:13.5px;color:#4a5560;}
+  .contact-form{border:1px solid var(--line);padding:30px;background:var(--white);}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-size:12.5px;font-weight:600;margin-bottom:7px;color:var(--ink-2);}
+  .field input, .field select, .field textarea{
+    width:100%;padding:12px 13px;border:1.5px solid var(--line);border-radius:2px;font-family:var(--font-body);font-size:14px;background:var(--paper);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{outline:none;border-color:var(--ink);}
+  .field textarea{resize:vertical;min-height:100px;}
+  @media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:36px;}.form-row{grid-template-columns:1fr;}}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--ink);color:var(--steel-light);padding:70px 0 28px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px;}
+  .foot-brand .brand-text strong{color:var(--white);}
+  .foot-brand p{font-size:13.5px;margin-top:16px;max-width:260px;color:var(--steel-light);}
+  .foot-col h5{font-size:12.5px;text-transform:uppercase;letter-spacing:0.06em;color:var(--white);margin-bottom:16px;}
+  .foot-col ul{display:flex;flex-direction:column;gap:10px;}
+  .foot-col a{font-size:13.5px;color:var(--steel-light);}
+  .foot-col a:hover{color:var(--white);}
+  .foot-social{display:flex;gap:10px;margin-top:18px;}
+  .foot-social a{
+    width:38px;height:38px;border:1px solid var(--line-dark);border-radius:2px;display:flex;align-items:center;justify-content:center;
+    transition:background .15s,border-color .15s;
+  }
+  .foot-social a:hover{background:rgba(255,255,255,0.08);border-color:var(--steel-light);}
+  .foot-social svg{width:17px;height:17px;color:var(--white);}
+  .foot-bottom{
+    margin-top:56px;padding-top:22px;border-top:1px solid var(--line-dark);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:var(--steel);
+  }
+  @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.foot-grid{grid-template-columns:1fr;}}
+
+  /* ---------- MODAL ---------- */
+  .modal-overlay{
+    position:fixed;inset:0;background:rgba(16,27,36,0.68);z-index:150;
+    display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow-y:auto;
+  }
+  .modal-overlay.open{display:flex;}
+  .modal{background:var(--white);max-width:840px;width:100%;margin:auto;border:1px solid var(--line);}
+  .modal-close{
+    position:sticky;top:14px;margin-left:auto;margin-right:14px;width:36px;height:36px;background:var(--ink);color:var(--white);
+    border:none;border-radius:2px;display:flex;align-items:center;justify-content:center;z-index:5;
+  }
+  .modal-body{padding:0 34px 36px;margin-top:-36px;}
+  .modal-img{aspect-ratio:16/9;overflow:hidden;border:1px solid var(--line);}
+  .modal-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px;}
+  .modal-tags span{font-size:11px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;background:var(--paper-2);padding:5px 10px;border-radius:2px;}
+  .modal h2{font-size:clamp(22px,3vw,30px);margin-top:14px;}
+  .modal .sub{color:var(--steel);font-size:14.5px;margin-top:6px;}
+  .modal .desc{margin-top:18px;font-size:15px;color:#3d4a54;}
+  .modal-cols{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:28px;}
+  .modal-block h4{font-size:12.5px;text-transform:uppercase;letter-spacing:0.06em;color:var(--amber-dark);margin-bottom:12px;}
+  .spec-list li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px;}
+  .spec-list li span:first-child{color:var(--steel);}
+  .spec-list li span:last-child{font-weight:600;}
+  .check-list li{font-size:14px;padding:6px 0 6px 20px;position:relative;color:#3d4a54;}
+  .check-list li::before{content:"✓";position:absolute;left:0;color:var(--amber-dark);font-weight:700;}
+  .modal-price-row{
+    margin-top:30px;border-top:1px solid var(--line);padding-top:24px;
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;
+  }
+  .modal-price{font-family:var(--font-head);font-size:26px;font-weight:800;}
+  .modal-price small{display:block;font-family:var(--font-body);font-size:11.5px;color:var(--steel);font-weight:500;margin-top:2px;}
+  .modal-actions{display:flex;gap:10px;flex-wrap:wrap;}
+  .modal-note{margin-top:14px;font-size:12px;color:var(--steel);}
+
+  /* ---------- CART DRAWER ---------- */
+  .drawer-overlay{position:fixed;inset:0;background:rgba(16,27,36,0.5);z-index:150;display:none;}
+  .drawer-overlay.open{display:block;}
+  .drawer{
+    position:fixed;top:0;right:0;bottom:0;width:min(420px,92vw);background:var(--white);z-index:151;
+    transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column;
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{padding:22px 22px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;}
+  .drawer-head h3{font-size:17px;}
+  .drawer-head button{background:none;border:none;}
+  .drawer-body{flex:1;overflow-y:auto;}
+  .drawer-empty{padding:60px 24px;text-align:center;color:var(--steel);font-size:14px;}
+  .drawer-row{display:flex;gap:12px;padding:16px 22px;border-bottom:1px solid var(--line);}
+  .drawer-row img{width:52px;height:52px;object-fit:cover;border:1px solid var(--line);flex:none;}
+  .drawer-row .info{flex:1;min-width:0;}
+  .drawer-row .info strong{font-size:13.5px;display:block;}
+  .drawer-row .info .variant{font-size:11.5px;color:var(--steel);}
+  .drawer-row .info .row2{display:flex;align-items:center;justify-content:space-between;margin-top:8px;}
+  .drawer-foot{padding:20px 22px;border-top:1px solid var(--line);}
+  .drawer-total{display:flex;justify-content:space-between;font-family:var(--font-head);font-weight:800;font-size:16.5px;margin-bottom:14px;}
+
+  ::selection{background:var(--amber);color:#fff;}
+  @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important;}}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="nav">
+    <a href="#home" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 20L9 9L12 14L16 6L21 20" stroke="#12202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-text">
+        <strong>FLYING HORSE</strong>
+        <span>Machinery Ltd</span>
+      </span>
+    </a>
+    <nav class="links">
+      <a href="#home">Home</a>
+      <a href="#equipment">Equipment</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#about">About Us</a>
+      <a href="#why">Why Flying Horse</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="cartOpenBtn" aria-label="Equipment list">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="21" r="1.3" fill="currentColor"/><circle cx="18" cy="21" r="1.3" fill="currentColor"/></svg>
+        <span class="cart-badge" id="cartBadge" style="display:none;">0</span>
+      </button>
+      <button class="icon-btn menu-toggle" id="menuOpenBtn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="scrim" id="mobileScrim"></div>
+  <div class="panel">
+    <button class="close-x" id="mobileCloseBtn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <a href="#home">Home</a>
+    <a href="#equipment">Equipment</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#about">About Us</a>
+    <a href="#why">Why Flying Horse</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <h1>Powering Farmers.<br>Building Futures.</h1>
+    <p class="hero-sub">Modern agricultural equipment designed to help farmers work more efficiently, improve productivity and move their operations forward. From tractors and tillage equipment to fodder processing, irrigation and farm machinery — backed by reliable service and expert support.</p>
+    <div class="hero-actions">
+      <a href="#equipment" class="btn btn-amber">Explore Our Equipment</a>
+      <a href="#" id="heroWaBtn" class="btn btn-outline-light">Talk to Us on WhatsApp</a>
+    </div>
+    <div class="hero-trust">
+      <div><strong>Modern Equipment</strong><span>Built for today's farming operations</span></div>
+      <div><strong>Reliable Service</strong><span>Support when you need it</span></div>
+      <div><strong>Delivery Available</strong><span>Serving farmers across Kenya</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="intro">
+  <div class="wrap intro-grid">
+    <div>
+      <p class="eyebrow">Introduction</p>
+      <h2>Equipment That Works as Hard as You Do</h2>
+    </div>
+    <div class="intro-body">
+      <p>Modern farming demands equipment that can keep up. At Flying Horse Machinery Ltd, we supply agricultural machinery and equipment designed for real farming conditions in Kenya. Whether you are preparing land, processing animal feed, irrigating your farm or handling post-harvest operations, we help you find the equipment suited to the job.</p>
+      <p>Our range serves small-scale farmers, commercial farms, livestock farmers, agribusinesses and agricultural enterprises.</p>
+      <div class="intro-tags">
+        <span>Small-Scale Farmers</span>
+        <span>Commercial Farms</span>
+        <span>Livestock Farmers</span>
+        <span>Agribusinesses</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="categories" id="solutions">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Explore Our Equipment</p>
+      <h2>Built for Every Stage of the Farm</h2>
+      <p>From land preparation to livestock feed processing, discover machinery designed to support different stages of modern farming.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <span class="num">01</span>
+        <h3>Tractors &amp; Land Preparation</h3>
+        <p>Equipment for preparing, cultivating and maintaining farmland.</p>
+        <ul><li>Walking Tractors</li><li>Ploughs</li><li>Rotavators &amp; Rotary Tillers</li><li>Ridgers</li><li>Harrowing Equipment</li><li>Cultivators</li></ul>
+        <a href="#equipment" class="cat-link" onclick="setFilter('tractors')">Explore Category →</a>
+      </div>
+      <div class="cat-card">
+        <span class="num">02</span>
+        <h3>Fodder &amp; Feed Processing</h3>
+        <p>Improve livestock feeding operations with efficient fodder and feed-processing equipment.</p>
+        <ul><li>Chaff Cutters</li><li>Silage Balers</li><li>Pellet Makers</li><li>Feed Processing Equipment</li></ul>
+        <a href="#equipment" class="cat-link" onclick="setFilter('fodder')">Explore Category →</a>
+      </div>
+      <div class="cat-card">
+        <span class="num">03</span>
+        <h3>Irrigation &amp; Water Equipment</h3>
+        <p>Reliable equipment for moving and managing water across agricultural operations.</p>
+        <ul><li>Water Pumps</li><li>Irrigation Equipment</li><li>Sprayers</li><li>Drainage Equipment</li></ul>
+        <a href="#equipment" class="cat-link" onclick="setFilter('irrigation')">Explore Category →</a>
+      </div>
+      <div class="cat-card">
+        <span class="num">04</span>
+        <h3>Harvesting &amp; Processing</h3>
+        <p>Equipment designed to improve efficiency during harvesting and crop processing.</p>
+        <ul><li>Maize Shellers</li><li>Reapers &amp; Harvesters</li><li>Mowers</li><li>Post-Harvest Equipment</li></ul>
+        <a href="#equipment" class="cat-link" onclick="setFilter('harvesting')">Explore Category →</a>
+      </div>
+      <div class="cat-card">
+        <span class="num">05</span>
+        <h3>Farm Tools &amp; Equipment</h3>
+        <p>Practical machinery and equipment for a wide range of farm operations.</p>
+        <ul><li>Trailers</li><li>Powersaws</li><li>Farm Attachments</li><li>Specialized Equipment</li></ul>
+        <a href="#equipment" class="cat-link" onclick="setFilter('tools')">Explore Category →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATALOGUE ============ -->
+<section class="catalogue" id="equipment">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Equipment Catalogue</p>
+      <h2>Find the Right Machine for the Job</h2>
+      <p>Browse our range of agricultural machinery and equipment. Each machine includes available specifications, applications, pricing and other relevant details to help you make an informed enquiry.</p>
+    </div>
+
+    <div class="cat-controls">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input type="text" id="searchInput" placeholder="Search tractors, chaff cutters, water pumps...">
+      </div>
+      <div class="filter-row" id="filterRow">
+        <button class="filter-chip active" data-filter="all">All Equipment</button>
+        <button class="filter-chip" data-filter="tractors">Tractors</button>
+        <button class="filter-chip" data-filter="fodder">Fodder &amp; Feed</button>
+        <button class="filter-chip" data-filter="irrigation">Irrigation</button>
+        <button class="filter-chip" data-filter="harvesting">Harvesting &amp; Processing</button>
+        <button class="filter-chip" data-filter="tools">Farm Tools</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+    <div class="no-results" id="noResults">No equipment matches your search. Try a different keyword or category.</div>
+  </div>
+</section>
+
+<!-- ============ FEATURED ============ -->
+<section class="featured">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Popular Equipment</p>
+      <h2>A Selection From Flying Horse Machinery</h2>
+    </div>
+    <div class="feat-scroll" id="featuredScroll"></div>
+  </div>
+</section>
+
+<!-- ============ WALKING TRACTOR ============ -->
+<section class="wt">
+  <div class="wrap wt-grid">
+    <div class="wt-img">
+      <img src="https://res.cloudinary.com/flying-horse-machinery/image/upload/f_auto,q_auto,w_900/equipment/walking-tractor-main.jpg" alt="Walking Tractor" onerror="fallbackImg(this,'Walking Tractor')">
+    </div>
+    <div>
+      <p class="eyebrow on-dark">One Machine. Multiple Possibilities.</p>
+      <h2>Walking Tractors for Versatile Farm Operations</h2>
+      <p class="wt-copy">Our walking tractors provide practical power for farmers looking to improve efficiency across multiple agricultural operations. Depending on the configuration, walking tractors can support:</p>
+      <ul class="wt-uses">
+        <li>Ploughing</li><li>Harrowing</li><li>Ridging</li><li>Cultivation</li><li>Transportation</li><li>Water Pumping</li>
+      </ul>
+
+      <div class="wt-config">
+        <p class="wt-config-label">Available Configurations · 15/18 HP</p>
+        <div class="wt-options" id="wtOptions"></div>
+        <div class="wt-price-row">
+          <div><span style="font-size:12.5px;color:var(--steel-light);">Price</span><div class="price" id="wtPrice">KES 35,000</div></div>
+        </div>
+        <p class="wt-delivery">Free delivery countrywide.</p>
+        <div class="wt-actions">
+          <button class="btn btn-amber" id="wtAddBtn">Add to Equipment List</button>
+          <a href="#" id="wtWaBtn" class="btn btn-outline-light">Enquire About Walking Tractors →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY FLYING HORSE ============ -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Why Flying Horse</p>
+      <h2>More Than Machinery</h2>
+      <p>Choosing agricultural equipment is about more than buying a machine. It is about finding equipment that fits your operation, your workload and your goals. Flying Horse Machinery Ltd combines a growing range of modern agricultural equipment with practical support to help farmers make the right choice.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.6"/></svg></div>
+        <h3>Quality Equipment</h3>
+        <p>We focus on practical machinery designed to deliver reliable performance in demanding agricultural environments.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Practical Solutions</h3>
+        <p>Different farms have different needs. We help customers identify equipment suited to their specific operations.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z" stroke="currentColor" stroke-width="1.6"/></svg></div>
+        <h3>Reliable Support</h3>
+        <p>From product enquiries to delivery and after-sales assistance, our team remains available to support our customers.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 20L9 9L12 14L16 6L21 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Built Around Farmers</h3>
+        <p>Our equipment range is focused on solving real farming challenges, from land preparation and irrigation to fodder processing and crop handling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services">
+  <div class="wrap">
+    <p class="eyebrow on-dark">Specialities</p>
+    <h2 style="margin-top:10px;font-size:clamp(26px,3.4vw,36px);">Agricultural Equipment for Every Stage of the Farm</h2>
+    <div class="svc-grid">
+      <div class="svc-card"><h3>Land Preparation</h3><p>Walking tractors, ploughs, rotavators, ridgers and other equipment for preparing and cultivating farmland.</p></div>
+      <div class="svc-card"><h3>Livestock Feed Processing</h3><p>Chaff cutters, silage balers and pellet makers designed to improve fodder and feed preparation.</p></div>
+      <div class="svc-card"><h3>Irrigation &amp; Water Management</h3><p>Water pumps, irrigation equipment and related machinery for agricultural water management.</p></div>
+      <div class="svc-card"><h3>Crop Processing</h3><p>Maize shellers, milling equipment and other machines that help farmers process crops efficiently.</p></div>
+      <div class="svc-card"><h3>Harvesting</h3><p>Reapers, harvesters, mowers and related equipment for different agricultural operations.</p></div>
+      <div class="svc-card"><h3>Farm Power &amp; Tools</h3><p>Powersaws, trailers and specialized farm equipment for a variety of agricultural applications.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How It Works</p>
+      <h2>From Machine Selection to Delivery</h2>
+    </div>
+    <div class="how-row">
+      <div class="how-step"><span class="n">01</span><h4>Explore</h4><p>Browse our equipment catalogue and compare available machines.</p></div>
+      <div class="how-step"><span class="n">02</span><h4>Choose</h4><p>Open the machine you're interested in and review its specifications, applications and available pricing.</p></div>
+      <div class="how-step"><span class="n">03</span><h4>Enquire</h4><p>Send your machine enquiry directly to our team through WhatsApp or contact us by phone.</p></div>
+      <div class="how-step"><span class="n">04</span><h4>Confirm</h4><p>Our team confirms availability, specifications, pricing and delivery arrangements.</p></div>
+      <div class="how-step"><span class="n">05</span><h4>Delivery</h4><p>Get your equipment delivered according to the agreed arrangements.</p></div>
+    </div>
+    <div class="how-cta">
+      <strong>Need help choosing?</strong>
+      <a href="#" id="howWaBtn" class="btn btn-dark btn-sm">Talk to an Equipment Specialist →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual">
+      <img src="https://res.cloudinary.com/flying-horse-machinery/image/upload/f_auto,q_auto,w_900/brand/about-team-farm.jpg" alt="Flying Horse Machinery team" onerror="fallbackImg(this,'About Flying Horse')">
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">About Us</p>
+      <h2 style="margin-top:10px;font-size:clamp(26px,3.4vw,36px);">About Flying Horse Machinery Ltd</h2>
+      <p>Flying Horse Machinery Ltd is an agricultural equipment company serving farmers and agricultural businesses with modern machinery and practical farming solutions.</p>
+      <p>Our range covers equipment for land preparation, irrigation, fodder processing, crop processing, harvesting and general farm operations. We are committed to making modern agricultural machinery more accessible to farmers while providing dependable service and support throughout the customer journey.</p>
+      <div class="mv-box">
+        <h4>Our Vision</h4>
+        <p>To support the growth of modern, productive and sustainable farming through accessible agricultural technology and reliable equipment.</p>
+      </div>
+      <div class="mv-box">
+        <h4>Our Mission</h4>
+        <p>To provide quality agricultural machinery, practical solutions and dependable customer service that help farmers improve productivity and build stronger agricultural enterprises.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATEMENT ============ -->
+<section class="statement">
+  <div class="wrap">
+    <h2>Modern Equipment. Better Farming. Stronger Futures.</h2>
+    <p>At Flying Horse Machinery, we believe the right equipment can change how a farm works. We provide machinery that helps farmers save time, reduce manual labour, improve efficiency and take on more productive agricultural operations.</p>
+    <p class="tag">Powering Farmers. Building Futures.</p>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="trust">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Customer Trust</p>
+      <h2>Trusted by Farmers &amp; Agricultural Businesses</h2>
+      <p>Our customers rely on Flying Horse Machinery for practical agricultural equipment and dependable service.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="quote-card">
+        <p>"They provide quality service and they have machines at affordable prices."</p>
+        <span>Flying Horse Machinery customer</span>
+      </div>
+      <div class="quote-card">
+        <p>"They have the best equipment and their prices are friendly."</p>
+        <span>Isinya Feeds Ltd</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DELIVERY ============ -->
+<section class="delivery">
+  <div class="wrap del-row">
+    <div>
+      <h2>Equipment Delivered Across Kenya</h2>
+      <p>Whether you are operating a small farm, livestock enterprise or commercial agricultural business, we make it easier to access the equipment you need. Delivery available countrywide on selected equipment. Speak to our team to confirm delivery availability, cost and timelines for your machine.</p>
+    </div>
+    <a href="#" id="deliveryWaBtn" class="btn btn-dark">Check Delivery Availability →</a>
+  </div>
+</section>
+
+<!-- ============ EQUIPMENT LIST BUILDER ============ -->
+<section class="builder" id="builderSection">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Build Your Equipment List</p>
+      <h2>Prepare Your Enquiry in One Message</h2>
+      <p>Select the machines you are interested in and we'll prepare your enquiry automatically — no need to fill in a form for every machine.</p>
+    </div>
+    <div class="builder-box" id="builderBox"></div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Ready to Upgrade Your Farm?</h2>
+    <p>Find the machinery suited to your operation and speak directly with our team. Whether you need a tractor, chaff cutter, water pump, maize sheller, pellet maker or specialized farm equipment, we're ready to help.</p>
+    <div class="hero-actions">
+      <a href="#equipment" class="btn btn-dark">Explore Equipment</a>
+      <a href="#" id="ctaWaBtn" class="btn btn-outline-light">Talk to Flying Horse</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's Talk Equipment</h2>
+      <p>Have a question about a machine, need help choosing equipment or want to confirm availability? Our team is ready to assist.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 5a2 2 0 0 1 2-2h2l2 5-2 1a12 12 0 0 0 6 6l1-2 5 2v2a2 2 0 0 1-2 2A16 16 0 0 1 3 5z" stroke="currentColor" stroke-width="1.5"/></svg></span>
+          <div><strong>Call / WhatsApp</strong><span>0702 562 083 &nbsp;·&nbsp; 0736 844 400</span></div>
+        </li>
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18v12H3V6z" stroke="currentColor" stroke-width="1.5"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.5"/></svg></span>
+          <div><strong>Email</strong><a href="mailto:Flyinghorse032@gmail.com">Flyinghorse032@gmail.com</a></div>
+        </li>
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.6 7-11.5A7 7 0 0 0 5 9.5C5 14.4 12 21 12 21z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.5"/></svg></span>
+          <div><strong>Location</strong><span>Along Nakuru–Nairobi Highway, Kenya</span></div>
+        </li>
+      </ul>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <div class="field"><label>Full Name</label><input type="text" name="name" required></div>
+        <div class="field"><label>Phone Number</label><input type="tel" name="phone" required></div>
+      </div>
+      <div class="field"><label>Email Address</label><input type="email" name="email"></div>
+      <div class="field"><label>Equipment of Interest</label><input type="text" name="equipment" placeholder="e.g. Walking Tractor, Chaff Cutter"></div>
+      <div class="field"><label>Message</label><textarea name="message" placeholder="Tell us what you need..."></textarea></div>
+      <button type="submit" class="btn btn-amber btn-block">Send Enquiry</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <div class="brand">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M3 20L9 9L12 14L16 6L21 20" stroke="#12202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="brand-text"><strong>FLYING HORSE MACHINERY LTD</strong></span>
+      </div>
+      <p>Modern Equipment for Modern Farming.<br>Powering Farmers. Building Futures.</p>
+      <div class="foot-social">
+        <a href="https://www.facebook.com/FlyingHorseMachinery032" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.4-3H13.5V8.4c0-.87.24-1.46 1.5-1.46H16.5V4.34C16.24 4.3 15.36 4.2 14.34 4.2c-2.13 0-3.59 1.3-3.59 3.68v2.12H8.2v3H10.75V21h2.75z"/></svg>
+        </a>
+        <a href="#" id="footWaBtn" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm0 1.8a7.2 7.2 0 0 1 6.1 11l.9 3.3-3.4-.9a7.2 7.2 0 1 1-3.6-13.4zm-3.3 4c-.2 0-.5 0-.7.4-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 3.1 4.8 4.2 2.4.9 2.8.7 3.3.7.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.5-.3l-2-1c-.3-.1-.5-.1-.6.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.4-.5-.6-.5h-.5z"/></svg>
+        </a>
+        <a href="mailto:Flyinghorse032@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18v12H3V6z" stroke="currentColor" stroke-width="1.6"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h5>Equipment</h5>
+      <ul>
+        <li><a href="#equipment" onclick="setFilter('tractors')">Walking Tractors</a></li>
+        <li><a href="#equipment" onclick="setFilter('fodder')">Chaff Cutters</a></li>
+        <li><a href="#equipment" onclick="setFilter('fodder')">Silage Balers</a></li>
+        <li><a href="#equipment" onclick="setFilter('fodder')">Pellet Makers</a></li>
+        <li><a href="#equipment" onclick="setFilter('irrigation')">Water Pumps</a></li>
+        <li><a href="#equipment" onclick="setFilter('harvesting')">Maize Shellers</a></li>
+        <li><a href="#equipment" onclick="setFilter('harvesting')">Posho Mills</a></li>
+        <li><a href="#equipment" onclick="setFilter('tools')">Farm Attachments</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#why">Why Flying Horse</a></li>
+        <li><a href="#solutions">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Flying Horse Machinery Ltd. All rights reserved.</span>
+    <span>Powered by MtaaniWeb</span>
+  </div>
+</footer>
+
+<!-- ============ PRODUCT MODAL ============ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" id="modalCloseBtn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3>Your Equipment List</h3>
+    <button id="drawerCloseBtn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot" id="drawerFoot" style="display:none;">
+    <div class="drawer-total"><span>Estimated Total</span><span id="drawerTotal">KES 0</span></div>
+    <a href="#" id="drawerWaBtn" class="btn btn-wa btn-block">Send Enquiry via WhatsApp</a>
+  </div>
+</div>
+
+<script>
+/* ================= CONFIG ================= */
+const PHONE = '254702562083';
+const CLOUD_BASE = 'https://res.cloudinary.com/flying-horse-machinery/image/upload/f_auto,q_auto,w_700/equipment/';
+const CATEGORY_LABELS = {
+  tractors:'Tractors & Land Prep', fodder:'Fodder & Feed', irrigation:'Irrigation & Water',
+  harvesting:'Harvesting & Processing', tools:'Farm Tools & Attachments'
+};
+
+/* ================= PRODUCT DATA ================= */
+/* hasSpecs=true items have confirmed data from the client. hasSpecs=false items
+   show "Contact for specifications and pricing" as instructed — no invented specs. */
+const PRODUCTS = [
+  {
+    id:'chaff-cutter-7-5hp', name:'High-Speed Chaff Cutter', subtitle:'Heavy-Duty Fodder Processing Equipment',
+    category:'fodder', hasSpecs:true, price:30000,
+    engine:'7.5 HP', type:'High-Speed Chaff Cutter', application:'Fodder Processing', suitableForSpec:'Green and dry fodder', availability:'Available',
+    suitableFor:['Napier grass','Hay','Maize stalks','Other fodder'],
+    features:['High-speed performance','Heavy-duty construction','Efficient fodder chopping','Easy to operate','Easy to maintain','Suitable for small-scale and commercial farming'],
+    tags:['7.5 HP','Heavy Duty','Fodder Processing'], featured:false,
+    desc:'Designed for fast and efficient chopping of fodder for dairy cows, goats, sheep and other livestock.',
+    image:'high-speed-chaff-cutter-7-5hp.jpg'
+  },
+  {
+    id:'chaff-cutter-petrol-multi', name:'Petrol Multipurpose Chaff Cutter', subtitle:'Multipurpose Fodder Processing Equipment',
+    category:'fodder', hasSpecs:true, price:40000,
+    engine:'Petrol Engine', type:'Multipurpose Chaff Cutter', application:'Fodder Processing', suitableForSpec:'Green and dry fodder', availability:'Available',
+    suitableFor:['Napier grass','Maize stalks','Hay','Other fodder'],
+    features:['Multipurpose processing','Petrol powered for flexible use','Heavy-duty build','Easy to operate and maintain'],
+    tags:['Petrol','Multipurpose','Fodder Processing'], featured:true,
+    desc:'Powerful multipurpose equipment for processing Napier grass, maize stalks, hay and other fodder.',
+    image:'petrol-multipurpose-chaff-cutter.jpg'
+  },
+  {
+    id:'chaff-cutter-8hp-diesel', name:'Chaff Cutter — 8 HP Diesel', subtitle:'Diesel-Powered Fodder Processing Equipment',
+    category:'fodder', hasSpecs:true, price:35000,
+    engine:'8 HP Diesel', type:'Chaff Cutter', application:'Fodder Processing', suitableForSpec:'Green and dry fodder', availability:'Available',
+    suitableFor:['Napier grass','Hay','Maize stalks','Other fodder'],
+    features:['Diesel-powered for reliable output','Heavy-duty construction','Efficient chopping','Low running cost'],
+    tags:['8 HP Diesel','Fodder Processing'], featured:false,
+    desc:'Reliable diesel-powered chaff cutter built for consistent fodder processing on commercial and small-scale farms.',
+    image:'chaff-cutter-8hp-diesel.jpg'
+  },
+  {
+    id:'chaff-cutter-2-5t', name:'Chaff Cutter — 2.5 Tonnes/Hr', subtitle:'High-Capacity Fodder Processing Equipment',
+    category:'fodder', hasSpecs:true, price:30000,
+    engine:'—', type:'Chaff Cutter', application:'Fodder Processing', suitableForSpec:'2.5 tonnes per hour capacity', availability:'Available',
+    suitableFor:['Napier grass','Hay','Maize stalks','Other fodder'],
+    features:['High processing capacity','Heavy-duty construction','Efficient fodder chopping','Suitable for commercial farming'],
+    tags:['2.5 T/hr','Fodder Processing'], featured:false,
+    desc:'High-capacity chaff cutter processing up to 2.5 tonnes of fodder per hour, suited to larger livestock operations.',
+    image:'chaff-cutter-2-5-tonnes.jpg'
+  },
+  {
+    id:'silage-baler-24hp', name:'Silage Baler Machine', subtitle:'Livestock Feed Preservation Equipment',
+    category:'fodder', hasSpecs:true, price:70000,
+    engine:'24 HP', type:'Silage Baler', application:'Feed Preservation', suitableForSpec:'Fresh-cut fodder for baling', availability:'Available',
+    suitableFor:['Napier grass silage','Maize silage','Other baled fodder'],
+    features:['Compact, dense bale formation','Improves feed preservation','Heavy-duty construction','Suitable for commercial farming'],
+    tags:['24 HP','Feed Preservation'], featured:true,
+    desc:'Efficient equipment for producing compact silage bales and improving livestock feed preservation.',
+    image:'silage-baler-24hp.jpg'
+  },
+  {
+    id:'pellet-maker', name:'Pellet Maker Machine', subtitle:'Animal Feed Pellet Production Equipment',
+    category:'fodder', hasSpecs:true, price:25000,
+    engine:'—', type:'Pellet Maker', application:'Feed Processing', suitableForSpec:'Maize, grass, bran, cereals and other feed ingredients', availability:'Available',
+    suitableFor:['Maize','Grass','Bran','Cereals'],
+    features:['Produces uniform feed pellets','Versatile ingredient input','Easy to operate','Suitable for small-scale and commercial use'],
+    tags:['Feed Processing'], featured:true,
+    desc:'Produce uniform animal-feed pellets from maize, grass, bran, cereals and other feed ingredients.',
+    image:'pellet-maker-machine.jpg'
+  },
+  {
+    id:'water-pump-20hp', name:'20 HP Water Pump', subtitle:'Heavy-Duty Water Pumping Equipment',
+    category:'irrigation', hasSpecs:true, price:70000,
+    engine:'20 HP', type:'Water Pump', application:'Irrigation / General Water Pumping', suitableForSpec:'Farms, construction and commercial applications', availability:'Available',
+    suitableFor:['Irrigation','Farms','Construction sites','Commercial applications'],
+    features:['Heavy-duty pumping performance','Suitable for multiple applications','Reliable output','Easy to operate'],
+    tags:['20 HP','Irrigation'], featured:true,
+    desc:'Heavy-duty water pumping equipment suitable for irrigation, farms, construction and commercial applications.',
+    image:'water-pump-20hp.jpg'
+  },
+  {
+    id:'posho-mill', name:'Grade 1 & 2 Posho Mill', subtitle:'Maize Milling Equipment',
+    category:'harvesting', hasSpecs:true, price:60000,
+    engine:'—', type:'Posho Mill (Grade 1 & 2)', application:'Maize Milling', suitableForSpec:'Small-scale and commercial milling operations', availability:'Available',
+    suitableFor:['Maize milling','Grade 1 & Grade 2 output'],
+    features:['Reliable milling performance','Grade 1 & 2 output','Heavy-duty construction','Suitable for commercial milling'],
+    tags:['Milling','Processing'], featured:true,
+    desc:'Reliable maize milling equipment for small-scale and commercial milling operations.',
+    image:'grade-1-2-posho-mill.jpg'
+  },
+  {
+    id:'powersaw-272', name:'Powersaw 272 Husqvarna', subtitle:'Farm Power Tool',
+    category:'tools', hasSpecs:true, price:30000,
+    engine:'Husqvarna 272', type:'Powersaw', application:'Cutting / Farm Tool Applications', suitableForSpec:'General farm cutting tasks', availability:'Available',
+    suitableFor:['Timber and wood cutting','General farm tasks'],
+    features:['Husqvarna 272 engine','Durable build','Suitable for demanding farm tasks'],
+    tags:['Husqvarna 272','Farm Tool'], featured:false,
+    desc:'Durable Husqvarna 272 powersaw suited to demanding farm cutting tasks.',
+    image:'powersaw-272-husqvarna.jpg'
+  },
+  {
+    id:'walking-tractor', name:'Walking Tractor', subtitle:'Versatile Land Preparation Equipment',
+    category:'tractors', hasSpecs:true, price:35000,
+    engine:'15/18 HP', type:'Walking Tractor', application:'Ploughing, Harrowing, Ridging, Cultivation, Transport, Water Pumping', suitableForSpec:'Land preparation for small and commercial farms', availability:'Available',
+    suitableFor:['Ploughing','Harrowing','Ridging','Cultivation','Transportation','Water pumping'],
+    features:['Versatile multi-attachment design','Single, double and triple plough configurations','Free delivery countrywide','Suitable for small-scale and commercial farming'],
+    tags:['15/18 HP','Versatile'], featured:true, hasVariants:true,
+    variants:[
+      {name:'Single Plough', hp:'18 HP', price:35000},
+      {name:'Double Plough', hp:'18 HP', price:60000},
+      {name:'Triple Plough', hp:'18 HP', price:96000}
+    ],
+    desc:'A versatile solution for land preparation and other agricultural operations — configurable with single, double or triple plough attachments.',
+    image:'walking-tractor-main.jpg'
+  },
+  // Contact-for-pricing items (name/category known, no confirmed specs supplied by client)
+  {id:'ploughs', name:'Ploughs', subtitle:'Land Preparation Attachment', category:'tractors', hasSpecs:false, tags:['Land Preparation'], featured:false, desc:'Ploughing attachments for land preparation.', image:'ploughs.jpg'},
+  {id:'rotavators', name:'Rotavators & Rotary Tillers', subtitle:'Land Preparation Equipment', category:'tractors', hasSpecs:false, tags:['Land Preparation'], featured:false, desc:'Rotary tillage equipment for breaking and preparing soil.', image:'rotavators-rotary-tillers.jpg'},
+  {id:'ridgers', name:'Ridgers', subtitle:'Cultivation Attachment', category:'tractors', hasSpecs:false, tags:['Cultivation'], featured:false, desc:'Ridging equipment for row-crop farming.', image:'ridgers.jpg'},
+  {id:'cultivators', name:'Cultivators', subtitle:'Land Preparation Equipment', category:'tractors', hasSpecs:false, tags:['Land Preparation'], featured:false, desc:'Cultivation equipment for maintaining farmland.', image:'cultivators.jpg'},
+  {id:'irrigation-equipment', name:'Irrigation Equipment', subtitle:'Water Management Equipment', category:'irrigation', hasSpecs:false, tags:['Irrigation'], featured:false, desc:'Irrigation equipment for agricultural water management.', image:'irrigation-equipment.jpg'},
+  {id:'sprayers', name:'Sprayers', subtitle:'Water & Chemical Application Equipment', category:'irrigation', hasSpecs:false, tags:['Irrigation'], featured:false, desc:'Sprayer equipment for farm applications.', image:'sprayers.jpg'},
+  {id:'maize-shellers', name:'Maize Shellers', subtitle:'Post-Harvest Processing Equipment', category:'harvesting', hasSpecs:false, tags:['Post-Harvest'], featured:false, desc:'Shelling equipment for maize processing.', image:'maize-shellers.jpg'},
+  {id:'reapers-harvesters', name:'Reapers & Harvesters', subtitle:'Harvesting Equipment', category:'harvesting', hasSpecs:false, tags:['Harvesting'], featured:false, desc:'Equipment for efficient crop harvesting.', image:'reapers-harvesters.jpg'},
+  {id:'mowers', name:'Mowers', subtitle:'Harvesting Equipment', category:'harvesting', hasSpecs:false, tags:['Harvesting'], featured:false, desc:'Mowing equipment for crop and grass cutting.', image:'mowers.jpg'},
+  {id:'trailers', name:'Trailers', subtitle:'Farm Transport Equipment', category:'tools', hasSpecs:false, tags:['Transport'], featured:false, desc:'Trailers for farm transport and haulage.', image:'trailers.jpg'},
+  {id:'farm-attachments', name:'Farm Attachments', subtitle:'Specialized Equipment', category:'tools', hasSpecs:false, tags:['Attachments'], featured:false, desc:'A range of specialized farm attachments.', image:'farm-attachments.jpg'},
+];
+
+/* ================= HELPERS ================= */
+function fmtKES(n){ return 'KES ' + n.toLocaleString('en-KE'); }
+function imgUrl(file){ return CLOUD_BASE + file; }
+function waLink(message){ return 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(message); }
+
+function fallbackImg(el, label){
+  el.onerror = null;
+  const wrap = el.parentElement;
+  el.style.display='none';
+  const div = document.createElement('div');
+  div.style.cssText = 'width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#1b2a37,#101b24);color:#c7cfd5;text-align:center;padding:14px;';
+  div.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 20L9 9L12 14L16 6L21 20" stroke="#e0790f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:11px;font-weight:600;letter-spacing:.02em;">'+label+'</span>';
+  wrap.appendChild(div);
+}
+
+/* generic WhatsApp buttons (hero, cta, etc.) */
+function genericWaMessage(){
+  return 'Hello Flying Horse Machinery, I would like to know more about your agricultural equipment.';
+}
+['heroWaBtn','ctaWaBtn','howWaBtn','deliveryWaBtn','footWaBtn'].forEach(id=>{
+  const el = document.getElementById(id);
+  if(el) el.href = waLink(genericWaMessage());
+});
+
+/* ================= RENDER: CATALOGUE ================= */
+const grid = document.getElementById('productGrid');
+const noResults = document.getElementById('noResults');
+let activeFilter = 'all';
+let searchTerm = '';
+
+function productCard(p){
+  const priceHtml = p.hasSpecs
+    ? `<div class="p-price">${p.hasVariants ? 'From ' + fmtKES(Math.min(...p.variants.map(v=>v.price))) : fmtKES(p.price)}<small>Prices subject to confirmation</small></div>`
+    : `<div class="p-price" style="font-size:14px;">Contact for Pricing<small>Specifications on request</small></div>`;
+  const specsHtml = p.hasSpecs
+    ? `<div class="p-specs">${p.tags.slice(0,3).map(t=>`<span>${t}</span>`).join('')}</div>`
+    : `<div class="p-specs"><span>${CATEGORY_LABELS[p.category]}</span></div>`;
+  return `
+  <div class="p-card" data-id="${p.id}">
+    <div class="p-thumb">
+      <span class="cat-tag">${CATEGORY_LABELS[p.category]}</span>
+      <img src="${imgUrl(p.image)}" alt="${p.name}" onerror="fallbackImg(this,'${p.name.replace(/'/g,"")}')">
+    </div>
+    <div class="p-body">
+      <h4>${p.name}</h4>
+      ${specsHtml}
+      ${priceHtml}
+      <div class="p-actions">
+        <button class="btn btn-outline btn-sm" onclick="openModal('${p.id}')" style="flex:1;">View Details</button>
+        <button class="add-fab" title="Add to Equipment List" onclick="quickAdd('${p.id}')">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderGrid(){
+  const term = searchTerm.trim().toLowerCase();
+  const list = PRODUCTS.filter(p=>{
+    const matchesFilter = activeFilter==='all' || p.category===activeFilter;
+    const matchesSearch = !term || p.name.toLowerCase().includes(term) || (CATEGORY_LABELS[p.category]||'').toLowerCase().includes(term);
+    return matchesFilter && matchesSearch;
+  });
+  grid.innerHTML = list.map(productCard).join('');
+  noResults.style.display = list.length ? 'none' : 'block';
+}
+renderGrid();
+
+document.getElementById('searchInput').addEventListener('input', e=>{
+  searchTerm = e.target.value; renderGrid();
+});
+document.getElementById('filterRow').addEventListener('click', e=>{
+  const btn = e.target.closest('.filter-chip');
+  if(!btn) return;
+  setFilter(btn.dataset.filter);
+});
+function setFilter(f){
+  activeFilter = f;
+  document.querySelectorAll('.filter-chip').forEach(c=>c.classList.toggle('active', c.dataset.filter===f));
+  renderGrid();
+}
+
+/* ================= RENDER: FEATURED ================= */
+const featScroll = document.getElementById('featuredScroll');
+featScroll.innerHTML = PRODUCTS.filter(p=>p.featured).map(p=>`
+  <div class="feat-card">
+    <div class="p-thumb">
+      <img src="${imgUrl(p.image)}" alt="${p.name}" onerror="fallbackImg(this,'${p.name.replace(/'/g,"")}')">
+    </div>
+    <div class="p-body">
+      <h4>${p.name}</h4>
+      <div class="p-price">${p.hasVariants ? 'From ' + fmtKES(Math.min(...p.variants.map(v=>v.price))) : (p.hasSpecs ? fmtKES(p.price) : 'Contact for Pricing')}</div>
+      <button class="btn btn-outline btn-sm" style="margin-top:12px;" onclick="openModal('${p.id}')">View Details →</button>
+    </div>
+  </div>
+`).join('');
+
+/* ================= WALKING TRACTOR CONFIGURATOR ================= */
+const wtProduct = PRODUCTS.find(p=>p.id==='walking-tractor');
+let wtSelected = 0;
+const wtOptionsEl = document.getElementById('wtOptions');
+function renderWt(){
+  wtOptionsEl.innerHTML = wtProduct.variants.map((v,i)=>`
+    <button class="wt-opt ${i===wtSelected?'active':''}" data-i="${i}">
+      <strong>${v.name}</strong><span>${fmtKES(v.price)}</span>
+    </button>`).join('');
+  document.getElementById('wtPrice').textContent = fmtKES(wtProduct.variants[wtSelected].price);
+  const v = wtProduct.variants[wtSelected];
+  document.getElementById('wtWaBtn').href = waLink(`Hello Flying Horse Machinery, I am interested in the Walking Tractor (${v.name}) listed at ${fmtKES(v.price)}. Please provide more information on availability, specifications and delivery.`);
+}
+wtOptionsEl.addEventListener('click', e=>{
+  const btn = e.target.closest('.wt-opt'); if(!btn) return;
+  wtSelected = parseInt(btn.dataset.i); renderWt();
+});
+document.getElementById('wtAddBtn').addEventListener('click', ()=>{
+  const v = wtProduct.variants[wtSelected];
+  addToCart(wtProduct.id, v.name, v.price, 1);
+  openDrawer();
+});
+renderWt();
+
+/* ================= CART (localStorage) ================= */
+const CART_KEY = 'fh_equipment_list';
+function loadCart(){ try{ return JSON.parse(localStorage.getItem(CART_KEY)) || []; }catch(e){ return []; } }
+function saveCart(c){ localStorage.setItem(CART_KEY, JSON.stringify(c)); }
+let cart = loadCart();
+
+function addToCart(productId, variantName, unitPrice, qty){
+  const key = productId + '::' + (variantName||'');
+  const existing = cart.find(i=>i.key===key);
+  if(existing){ existing.qty += qty; }
+  else {
+    const p = PRODUCTS.find(pp=>pp.id===productId);
+    cart.push({ key, productId, name:p.name, variant:variantName||'', unitPrice: unitPrice, qty: qty, image:p.image });
+  }
+  saveCart(cart);
+  renderCart();
+}
+function quickAdd(productId){
+  const p = PRODUCTS.find(pp=>pp.id===productId);
+  if(!p.hasSpecs){
+    addToCart(productId, '', 0, 1);
+  } else if(p.hasVariants){
+    addToCart(productId, p.variants[0].name, p.variants[0].price, 1);
+  } else {
+    addToCart(productId, '', p.price, 1);
+  }
+  openDrawer();
+}
+function updateQty(key, delta){
+  const item = cart.find(i=>i.key===key); if(!item) return;
+  item.qty += delta;
+  if(item.qty<=0){ cart = cart.filter(i=>i.key!==key); }
+  saveCart(cart); renderCart(); renderBuilder();
+}
+function removeItem(key){
+  cart = cart.filter(i=>i.key!==key);
+  saveCart(cart); renderCart(); renderBuilder();
+}
+function cartTotal(){ return cart.reduce((s,i)=> s + (i.unitPrice * i.qty), 0); }
+function cartCount(){ return cart.reduce((s,i)=> s + i.qty, 0); }
+
+function buildWaMessage(){
+  let msg = 'Hello Flying Horse Machinery,\n\nI would like to enquire about the following equipment:\n';
+  cart.forEach(i=>{
+    const label = i.variant ? `${i.name}, ${i.variant}` : i.name;
+    const priceLabel = i.unitPrice ? fmtKES(i.unitPrice) : 'price on request';
+    msg += `${label} × ${i.qty}: ${priceLabel}\n`;
+  });
+  const total = cartTotal();
+  msg += total ? `\nEstimated total: ${fmtKES(total)}.\n` : '\n';
+  msg += '\nPlease confirm availability, specifications and delivery details.';
+  return msg;
+}
+
+/* ---- cart badge ---- */
+function renderCartBadge(){
+  const badge = document.getElementById('cartBadge');
+  const count = cartCount();
+  badge.textContent = count;
+  badge.style.display = count>0 ? 'flex' : 'none';
+}
+
+/* ---- drawer ---- */
+const drawerBody = document.getElementById('drawerBody');
+const drawerFoot = document.getElementById('drawerFoot');
+function renderCart(){
+  renderCartBadge();
+  if(cart.length===0){
+    drawerBody.innerHTML = `<div class="drawer-empty">Your equipment list is empty.<br>Browse the catalogue and tap "＋" to add a machine.</div>`;
+    drawerFoot.style.display='none';
+    return;
+  }
+  drawerBody.innerHTML = cart.map(i=>`
+    <div class="drawer-row">
+      <img src="${imgUrl(i.image)}" alt="${i.name}" onerror="this.style.background='#1b2a37';this.src='';">
+      <div class="info">
+        <strong>${i.name}</strong>
+        ${i.variant ? `<div class="variant">${i.variant}</div>` : ''}
+        <div class="row2">
+          <div class="qty">
+            <button onclick="updateQty('${i.key}',-1)">−</button>
+            <span>${i.qty}</span>
+            <button onclick="updateQty('${i.key}',1)">+</button>
+          </div>
+          <button class="b-remove" onclick="removeItem('${i.key}')" title="Remove">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+  drawerFoot.style.display='block';
+  document.getElementById('drawerTotal').textContent = fmtKES(cartTotal());
+  document.getElementById('drawerWaBtn').href = waLink(buildWaMessage());
+  renderBuilder();
+}
+
+/* ---- inline "Build Your Equipment List" section ---- */
+const builderBox = document.getElementById('builderBox');
+function renderBuilder(){
+  if(cart.length===0){
+    builderBox.innerHTML = `<div class="builder-empty">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Your equipment list is empty. Browse the catalogue above and add machines to build your enquiry.
+    </div>`;
+    return;
+  }
+  const rows = cart.map(i=>`
+    <div class="b-row">
+      <img src="${imgUrl(i.image)}" alt="${i.name}" onerror="this.style.background='#ebe7dd';this.src='';">
+      <div>
+        <div class="b-name">${i.name}</div>
+        ${i.variant ? `<div class="b-variant">${i.variant}</div>` : ''}
+      </div>
+      <div class="qty">
+        <button onclick="updateQty('${i.key}',-1)">−</button>
+        <span>${i.qty}</span>
+        <button onclick="updateQty('${i.key}',1)">+</button>
+      </div>
+      <div class="b-price">${i.unitPrice ? fmtKES(i.unitPrice*i.qty) : 'On request'}</div>
+      <button class="b-remove" onclick="removeItem('${i.key}')">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  `).join('');
+  builderBox.innerHTML = rows + `
+    <div class="builder-footer">
+      <div class="b-total">${fmtKES(cartTotal())}<small>Estimated Total</small></div>
+      <a href="${waLink(buildWaMessage())}" target="_blank" rel="noopener" class="btn btn-wa">Send Enquiry via WhatsApp</a>
+    </div>`;
+}
+renderCart();
+
+/* ================= PRODUCT MODAL ================= */
+const modalOverlay = document.getElementById('modalOverlay');
+const modalBody = document.getElementById('modalBody');
+function openModal(id){
+  const p = PRODUCTS.find(pp=>pp.id===id);
+  if(!p) return;
+
+  const specRows = p.hasSpecs ? `
+    <ul class="spec-list">
+      ${p.engine ? `<li><span>Engine</span><span>${p.engine}</span></li>` : ''}
+      <li><span>Type</span><span>${p.type||p.name}</span></li>
+      ${p.application ? `<li><span>Application</span><span>${p.application}</span></li>` : ''}
+      ${p.suitableForSpec ? `<li><span>Suitable For</span><span>${p.suitableForSpec}</span></li>` : ''}
+      <li><span>Availability</span><span>${p.availability||'Available'}</span></li>
+    </ul>` : `<p style="font-size:14px;color:#4a5560;">Specifications available on request — contact our team to confirm details for this machine.</p>`;
+
+  const suitableList = (p.suitableFor && p.suitableFor.length) ? `
+    <div class="modal-block">
+      <h4>Suitable For</h4>
+      <ul class="check-list">${p.suitableFor.map(s=>`<li>${s}</li>`).join('')}</ul>
+    </div>` : '';
+
+  const featuresList = (p.features && p.features.length) ? `
+    <div class="modal-block">
+      <h4>Features</h4>
+      <ul class="check-list">${p.features.map(s=>`<li>${s}</li>`).join('')}</ul>
+    </div>` : '';
+
+  let priceBlock, actionsBlock;
+  if(p.hasVariants){
+    priceBlock = `<div class="modal-price">From ${fmtKES(Math.min(...p.variants.map(v=>v.price)))}<small>Single / Double / Triple Plough configurations</small></div>`;
+    actionsBlock = `<div class="modal-actions">
+      <button class="btn btn-amber" onclick="addToCart('${p.id}','${p.variants[0].name}',${p.variants[0].price},1);closeModal();openDrawer();">Add to List</button>
+      <a href="${waLink('Hello Flying Horse Machinery, I am interested in the Walking Tractor. Please provide more information on availability, specifications and delivery.')}" target="_blank" rel="noopener" class="btn btn-wa">Enquire on WhatsApp</a>
+    </div>`;
+  } else if(p.hasSpecs){
+    priceBlock = `<div class="modal-price">${fmtKES(p.price)}<small>Prices and specifications are subject to availability and confirmation.</small></div>`;
+    actionsBlock = `<div class="modal-actions">
+      <button class="btn btn-amber" onclick="addToCart('${p.id}','',${p.price},1);closeModal();openDrawer();">Add to List</button>
+      <a href="${waLink(`Hello Flying Horse Machinery, I am interested in the ${p.name} listed at ${fmtKES(p.price)}. Please provide more information on availability, specifications and delivery.`)}" target="_blank" rel="noopener" class="btn btn-wa">Enquire About This Machine</a>
+    </div>`;
+  } else {
+    priceBlock = `<div class="modal-price" style="font-size:19px;">Contact for Pricing<small>Specifications and pricing available on request</small></div>`;
+    actionsBlock = `<div class="modal-actions">
+      <button class="btn btn-amber" onclick="addToCart('${p.id}','',0,1);closeModal();openDrawer();">Add to List</button>
+      <a href="${waLink(`Hello Flying Horse Machinery, I am interested in the ${p.name}. Please provide more information on specifications, availability, pricing and delivery.`)}" target="_blank" rel="noopener" class="btn btn-wa">Enquire on WhatsApp</a>
+    </div>`;
+  }
+
+  modalBody.innerHTML = `
+    <div class="modal-img">
+      <img src="${imgUrl(p.image)}" alt="${p.name}" onerror="fallbackImg(this,'${p.name.replace(/'/g,"")}')">
+    </div>
+    <div class="modal-tags">${(p.tags||[]).map(t=>`<span>${t}</span>`).join('')}<span>${CATEGORY_LABELS[p.category]}</span></div>
+    <h2>${p.name}</h2>
+    <p class="sub">${p.subtitle||''}</p>
+    <p class="desc">${p.desc||''}</p>
+    <div class="modal-cols">
+      <div class="modal-block">
+        <h4>Key Specifications</h4>
+        ${specRows}
+      </div>
+      <div>
+        ${suitableList}
+        ${featuresList}
+      </div>
+    </div>
+    <div class="modal-price-row">
+      ${priceBlock}
+      ${actionsBlock}
+    </div>
+    <p class="modal-note">Prices and specifications are subject to availability and confirmation.</p>
+  `;
+  modalOverlay.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  modalOverlay.classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', e=>{ if(e.target===modalOverlay) closeModal(); });
+
+/* ================= CART DRAWER TOGGLE ================= */
+const drawer = document.getElementById('drawer');
+const drawerOverlay = document.getElementById('drawerOverlay');
+function openDrawer(){
+  drawer.classList.add('open'); drawerOverlay.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeDrawer(){
+  drawer.classList.remove('open'); drawerOverlay.classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('cartOpenBtn').addEventListener('click', openDrawer);
+document.getElementById('drawerCloseBtn').addEventListener('click', closeDrawer);
+drawerOverlay.addEventListener('click', closeDrawer);
+
+/* ================= MOBILE MENU ================= */
+const mobileMenu = document.getElementById('mobileMenu');
+document.getElementById('menuOpenBtn').addEventListener('click', ()=> mobileMenu.classList.add('open'));
+document.getElementById('mobileCloseBtn').addEventListener('click', ()=> mobileMenu.classList.remove('open'));
+document.getElementById('mobileScrim').addEventListener('click', ()=> mobileMenu.classList.remove('open'));
+mobileMenu.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> mobileMenu.classList.remove('open')));
+
+/* ================= CONTACT FORM ================= */
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const f = new FormData(this);
+  const name = f.get('name'), phone = f.get('phone'), email = f.get('email'),
+        equipment = f.get('equipment'), message = f.get('message');
+  let msg = `Hello Flying Horse Machinery,\n\nMy name is ${name} (${phone}).`;
+  if(email) msg += ` Email: ${email}.`;
+  if(equipment) msg += `\nI'm interested in: ${equipment}.`;
+  if(message) msg += `\nMessage: ${message}`;
+  window.open(waLink(msg), '_blank');
+});
+
+/* init */
+renderCartBadge();
+</script>
+</body>
+</html>
