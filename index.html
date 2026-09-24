@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flying Horse Machinery Ltd | Modern Equipment for Modern Farming</title>
-<meta name="description" content="Agricultural machinery and equipment for Kenyan farmers — tractors, chaff cutters, water pumps, silage balers, pellet makers and more. Powering Farmers. Building Futures.">
+<meta name="description" content="Agricultural machinery and equipment for Kenyan farmers, tractors, chaff cutters, water pumps, silage balers, pellet makers and more. Powering Farmers. Building Futures.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -97,6 +97,7 @@
     border-radius:2px;
   }
   .brand-mark svg{width:22px;height:22px;}
+  .brand-logo{height:44px;width:auto;max-width:150px;object-fit:contain;flex:none;border-radius:2px;background:#fff;}
   .brand-text{display:flex;flex-direction:column;line-height:1.15;}
   .brand-text strong{font-family:var(--font-head);font-size:16px;font-weight:800;letter-spacing:0.01em;}
   .brand-text span{font-size:10.5px;color:var(--steel-light);letter-spacing:0.06em;text-transform:uppercase;}
@@ -474,9 +475,7 @@
 <header>
   <div class="nav">
     <a href="#home" class="brand">
-      <span class="brand-mark">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 20L9 9L12 14L16 6L21 20" stroke="#12202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </span>
+      <img class="brand-logo" src="https://res.cloudinary.com/hztm3zo8/image/upload/v1790239657/IMG-20260924-WA0005_xyfw8f.jpg" alt="Flying Horse Machinery Ltd logo">
       <span class="brand-text">
         <strong>FLYING HORSE</strong>
         <span>Machinery Ltd</span>
@@ -521,7 +520,7 @@
 <section class="hero" id="home">
   <div class="hero-inner">
     <h1>Powering Farmers.<br>Building Futures.</h1>
-    <p class="hero-sub">Modern agricultural equipment designed to help farmers work more efficiently, improve productivity and move their operations forward. From tractors and tillage equipment to fodder processing, irrigation and farm machinery — backed by reliable service and expert support.</p>
+    <p class="hero-sub">Modern agricultural equipment designed to help farmers work more efficiently, improve productivity and move their operations forward. From tractors and tillage equipment to fodder processing, irrigation and farm machinery, backed by reliable service and expert support.</p>
     <div class="hero-actions">
       <a href="#equipment" class="btn btn-amber">Explore Our Equipment</a>
       <a href="#" id="heroWaBtn" class="btn btn-outline-light">Talk to Us on WhatsApp</a>
@@ -651,16 +650,16 @@
     <div>
       <p class="eyebrow on-dark">One Machine. Multiple Possibilities.</p>
       <h2>Walking Tractors for Versatile Farm Operations</h2>
-      <p class="wt-copy">Our walking tractors provide practical power for farmers looking to improve efficiency across multiple agricultural operations. Depending on the configuration, walking tractors can support:</p>
+      <p class="wt-copy">Our walking tractors provide practical power for farmers looking to improve efficiency across multiple agricultural operations. Depending on the model, walking tractors can support:</p>
       <ul class="wt-uses">
         <li>Ploughing</li><li>Harrowing</li><li>Ridging</li><li>Cultivation</li><li>Transportation</li><li>Water Pumping</li>
       </ul>
 
       <div class="wt-config">
-        <p class="wt-config-label">Available Configurations · 15/18 HP</p>
+        <p class="wt-config-label">Available Models · 15 HP &amp; 28 HP</p>
         <div class="wt-options" id="wtOptions"></div>
         <div class="wt-price-row">
-          <div><span style="font-size:12.5px;color:var(--steel-light);">Price</span><div class="price" id="wtPrice">KES 35,000</div></div>
+          <div><span style="font-size:12.5px;color:var(--steel-light);">Price</span><div class="price" id="wtPrice">KES 96,000</div></div>
         </div>
         <p class="wt-delivery">Free delivery countrywide.</p>
         <div class="wt-actions">
@@ -870,7 +869,7 @@
   <div class="wrap foot-grid">
     <div class="foot-brand">
       <div class="brand">
-        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M3 20L9 9L12 14L16 6L21 20" stroke="#12202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <img class="brand-logo" src="https://res.cloudinary.com/hztm3zo8/image/upload/v1790239657/IMG-20260924-WA0005_xyfw8f.jpg" alt="Flying Horse Machinery Ltd logo">
         <span class="brand-text"><strong>FLYING HORSE MACHINERY LTD</strong></span>
       </div>
       <p>Modern Equipment for Modern Farming.<br>Powering Farmers. Building Futures.</p>
@@ -1046,17 +1045,16 @@ const PRODUCTS = [
   },
   {
     id:'walking-tractor', name:'Walking Tractor', subtitle:'Versatile Land Preparation Equipment',
-    category:'tractors', hasSpecs:true, price:35000,
-    engine:'15/18 HP', type:'Walking Tractor', application:'Ploughing, Harrowing, Ridging, Cultivation, Transport, Water Pumping', suitableForSpec:'Land preparation for small and commercial farms', availability:'Available',
+    category:'tractors', hasSpecs:true, price:96000,
+    engine:'15 HP / 28 HP', type:'Walking Tractor', application:'Ploughing, Harrowing, Ridging, Cultivation, Transport, Water Pumping', suitableForSpec:'Land preparation for small and commercial farms', availability:'Available',
     suitableFor:['Ploughing','Harrowing','Ridging','Cultivation','Transportation','Water pumping'],
-    features:['Versatile multi-attachment design','Single, double and triple plough configurations','Free delivery countrywide','Suitable for small-scale and commercial farming'],
-    tags:['15/18 HP','Versatile'], featured:true, hasVariants:true,
+    features:['Versatile multi-attachment design','Available in 15 HP and 28 HP models','Free delivery countrywide','Suitable for small-scale and commercial farming'],
+    tags:['15 HP','28 HP','Versatile'], featured:true, hasVariants:true,
     variants:[
-      {name:'Single Plough', hp:'18 HP', price:35000},
-      {name:'Double Plough', hp:'18 HP', price:60000},
-      {name:'Triple Plough', hp:'18 HP', price:96000}
+      {name:'15 HP Walking Tractor', hp:'15 HP', price:96000},
+      {name:'28 HP Walking Tractor', hp:'28 HP', price:245000}
     ],
-    desc:'A versatile solution for land preparation and other agricultural operations — configurable with single, double or triple plough attachments.',
+    desc:'A versatile solution for land preparation and other agricultural operations — available in 15 HP and 28 HP models.',
     image:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790240299/Polish_20260924_114033444_cmiv2e.jpg'
   },
   // Contact-for-pricing items (name/category known, no confirmed specs supplied by client)
@@ -1065,7 +1063,15 @@ const PRODUCTS = [
   {id:'ridgers', name:'Ridgers', subtitle:'Cultivation Attachment', category:'tractors', hasSpecs:false, tags:['Cultivation'], featured:false, desc:'Ridging equipment for row-crop farming.', image:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790240367/Polish_20260924_114151723_ltjbhi.jpg'},
   {id:'cultivators', name:'Cultivators', subtitle:'Land Preparation Equipment', category:'tractors', hasSpecs:false, tags:['Land Preparation'], featured:false, desc:'Cultivation equipment for maintaining farmland.', image:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790240385/Polish_20260924_114207020_eycxrv.png'},
   {id:'irrigation-equipment', name:'Irrigation Equipment', subtitle:'Water Management Equipment', category:'irrigation', hasSpecs:false, tags:['Irrigation'], featured:false, desc:'Irrigation equipment for agricultural water management.', image:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790240406/Polish_20260924_114230241_maatbv.jpg'},
-  {id:'maize-shellers', name:'Maize Shellers', subtitle:'Post-Harvest Processing Equipment', category:'harvesting', hasSpecs:false, tags:['Post-Harvest'], featured:false, desc:'Shelling equipment for maize processing.', image:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790240429/Polish_20260924_114300669_ienh5b.jpg'},
+  {id:'maize-shellers', name:'Maize Shellers', subtitle:'Post-Harvest Processing Equipment', category:'harvesting', hasSpecs:true, price:30000,
+    engine:'Diesel 7.5 HP / Electric 5.5 HP', type:'Maize Sheller', application:'Shelling of maize', availability:'Available',
+    tags:['Post-Harvest','Diesel','Electric'], featured:false, hasVariants:true,
+    variants:[
+      {name:'Diesel Engine 7.5 HP', hp:'7.5 HP', price:30000},
+      {name:'Electric Motor 5.5 HP', hp:'5.5 HP', price:35000}
+    ],
+    desc:'Shelling equipment for maize processing, available with a diesel engine or an electric motor.',
+    image:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790240429/Polish_20260924_114300669_ienh5b.jpg'},
   {id:'reapers-harvesters', name:'Reapers & Harvesters', subtitle:'Harvesting Equipment', category:'harvesting', hasSpecs:false, tags:['Harvesting'], featured:false, desc:'Equipment for efficient crop harvesting.', image:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790240447/Polish_20260924_114325831_d8dzhk.jpg'},
   {id:'mowers', name:'Mowers', subtitle:'Harvesting Equipment', category:'harvesting', hasSpecs:false, tags:['Harvesting'], featured:false, desc:'Mowing equipment for crop and grass cutting.', image:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790240536/Polish_20260924_114346923_tdliak.jpg'},
   {id:'trailers', name:'Trailers', subtitle:'Farm Transport Equipment', category:'tools', hasSpecs:false, tags:['Transport'], featured:false, desc:'Trailers for farm transport and haulage.', image:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790240576/Polish_20260924_114410913_sdqce8.jpg'},
@@ -1357,10 +1363,10 @@ function openModal(id){
 
   let priceBlock, actionsBlock;
   if(p.hasVariants){
-    priceBlock = `<div class="modal-price">From ${fmtKES(Math.min(...p.variants.map(v=>v.price)))}<small>Single / Double / Triple Plough configurations</small></div>`;
+    priceBlock = `<div class="modal-price">From ${fmtKES(Math.min(...p.variants.map(v=>v.price)))}<small>${p.variants.map(v=>v.name+' — '+fmtKES(v.price)).join(' &nbsp;·&nbsp; ')}</small></div>`;
     actionsBlock = `<div class="modal-actions">
-      <button class="btn btn-amber" onclick="addToCart('${p.id}','${p.variants[0].name}',${p.variants[0].price},1);closeModal();openDrawer();">Add to List</button>
-      <a href="${waLink('Hello Flying Horse Machinery, I am interested in the Walking Tractor. Please provide more information on availability, specifications and delivery.')}" target="_blank" rel="noopener" class="btn btn-wa">Enquire on WhatsApp</a>
+      ${p.variants.map(v=>`<button class="btn btn-amber" onclick="addToCart('${p.id}','${v.name}',${v.price},1);closeModal();openDrawer();">Add ${v.name.replace(' Walking Tractor','')}</button>`).join('')}
+      <a href="${waLink('Hello Flying Horse Machinery, I am interested in the '+p.name+'. Please provide more information on availability, specifications and delivery.')}" target="_blank" rel="noopener" class="btn btn-wa">Enquire on WhatsApp</a>
     </div>`;
   } else if(p.hasSpecs){
     priceBlock = `<div class="modal-price">${fmtKES(p.price)}<small>Prices and specifications are subject to availability and confirmation.</small></div>`;
